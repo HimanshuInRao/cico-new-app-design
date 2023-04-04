@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --orangeColor: #E06111;
+    --whiteColor: #FFFFFF;
+    --lightOrange: #EB931C;
+    --darkmixOrange: #B86133;
+    --darkPurple: #2B2A53;
+    --lightGray: #B0A59D;
+    --borwn: #332E29;
+    --darkBrown: #E5D2A3;
+}
+
+/* main page style */
+
+.main-section {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--darkBrown);
+}
+
+/* for navbar */
+.nav-header {
+    position: relative;
+    margin: 10px 10px;
+    color: var(--darkmixOrange);
+}
+
+.nav-header .nav-logo-section h1 {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.nav-header .nav-logo-section p {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.nav-logo-out {
+    background-color: var(--lightOrange);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+/* cico component */
+
+.clockInOut-component {
+    display: block;
+    position: relative;
+}
+
+.user-details {
+    position: relative;
+    background-color: var(--lightOrange);
+    top: -30px;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    padding-top: 30px;
+}
+
+.user-details .user-name,
+.user-details .date-time {
+    text-align: center;
+}
+
+.user-details .user-name h1 {
+    color: var(--whiteColor);
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.user-details .user-name p {
+    color: var(--whiteColor);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.horizontal-line {
+    color: var(--lightGray);
+    width: calc(100% - 30px);
+    height: 1px;
+}
+
+.date-time {
+    background-color: var(--darkBrown);
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 9px 0px 15px 0px;
+}
+
+.date-time h1 {
+    color: var(--darkmixOrange);
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.date-time p {
+    color: var(--darkmixOrange);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.login-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0% 3%;
+}
+
+.total-hours {
+    background-color: var(--lightOrange);
+    padding: 10px 20px;
+    margin-right: 10px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.total-hours .total-counter h2,
+.total-hours .total-counter p {
+    color: white;
+    margin: 0px;
+}
+
+.total-hours .total-counter h2 {
+    font-size: 17px;
+}
+
+.total-hours .total-counter p {
+    font-size: 13px;
+}
+
+/* cico btn group */
+
+.cico-btns {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+/* button styles */
+
+.ball-btn {
+    width: auto;
+    height: auto;
+    margin: 0px 0px 30px 0px;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+.ball-btn-mini {
+    width: auto;
+    height: auto;
+    margin: 0px 0px 30px 10px;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+
+/* feature */
+
+.grid-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-couting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 0%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.box-couting:nth-child(1) {
+    background-color: var(--whiteColor);
+}
+
+.box-couting:nth-child(2) {
+    color: var(--whiteColor);
+    background-color: var(--borwn);
+}
+
+.box-couting h2 {
+    text-align: center;
+    margin: 0px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.box-couting p {
+    text-align: center;
+    font-weight: 600;
+    margin: 0px;
+    font-size: 10px;
+}
+
+/* for image */
+
+.image-logout {
+    max-width: 30px;
+}
+
+.user-image {
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: fill;
+
+}
+
+.ball-btn img {
+    width: 50vw;
+    max-width: 250px;
+}
+
+.ball-btn-mini img {
+    width: 20vw;
+    max-width: 100px;
+}
+
+.clock-img {
+    max-width: 60px;
+    margin: 18px 0px;
+}
+
+.img-feature {
+    margin-right: 10px;
+    max-width: 50px;
+}
