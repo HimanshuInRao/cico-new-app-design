@@ -121,7 +121,7 @@
     color: var(--lightgreen);
     font-size: 13px;
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0px;
 }
 
@@ -321,5 +321,111 @@
     .shaped_curv {
         -webkit-mask-size: 600px 280px;
         -webkit-mask-position: center top -20px;
+    }
+}
+
+.clockIn {
+    max-width: 90px;
+}
+
+.btn-text {
+    position: relative;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--lightOrange);
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-text h3 {
+    margin: 10px 0px;
+    font-size: 18px;
+    color: #18493f;
+    font-weight: 700;
+    transition: all 0.25s ease-in-out;
+}
+
+.white-ring {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-group-cico {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    transition: all 0.25s ease-in-out;
+}
+
+.white-ring:nth-child(2) .btn-text {
+    width: 50px;
+    height: 50px;
+    transition: all 0.25s ease-in-out;
+}
+
+.white-ring:nth-child(2) .btn-text .clockIn {
+    width: 35px;
+    height: 35px;
+    transition: all 0.25s ease-in-out;
+}
+
+.white-ring:nth-child(2) .btn-text h3 {
+    display: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.white-ring:nth-child(2) {
+    padding: 5px;
+}
+
+.anime {
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.561);
+    animation-name: effectOnBtn;
+    animation-duration: 1s;
+    transition: transform 0.25s ease-in-out;
+}
+
+@keyframes effectOnBtn {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.90);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animeOut {
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.561);
+    animation-name: effectOutBtn;
+    animation-duration: 1s;
+    transition: transform 0.25s ease-in-out;
+}
+
+@keyframes effectOutBtn {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }

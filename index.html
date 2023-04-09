@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <div class="container-fluid main-section">
         <!-- navbar start -->
         <div class="nav-header d-flex justify-content-between align-items-center">
@@ -34,16 +33,30 @@
             <img src="./assets/user-icon.jpg" alt="" class="user-image">
             <div class="user-details">
                 <div class="user-name">
-                    <h1>Himanshu Chauhan</h1>
-                    <p>Jr. Developer</p>
+                    <h1>Dave Hudson</h1>
+                    <p>Web Developer</p>
                 </div>
                 <div class="date-time">
-                    <h1>Tuesday</h1>
-                    <p>31/02/2004</p>
+                    <h1 id="currentDay">Tuesday</h1>
+                    <p id="currentDate">31/02/2004</p>
                 </div>
                 <div class="cico-btns">
-                    <button class="ball-btn"><img src="./assets/clockin.png" alt="button-img"></button>
-                    <button class="ball-btn-mini"><img src="./assets/breakfast.png" alt="button-img"></button>
+                    <!-- <button class="ball-btn" id="clockIn" onclick="clockIn()" id="btnClockIn"><img src="./assets/clockin.png" alt="button-img"></button> -->
+                    <!-- <button class="ball-btn-mini" id="startBreak" onclick=""><img src="./assets/breakfast.png" alt="button-img"></button> -->
+                    <div class="btn-group-cico">
+                        <div class="white-ring" id="clock-in-btn">
+                            <button class="btn-text" onclick="clockIn()">
+                                <img src="./assets/clock-feature.png" alt="clockIn" class="clockIn" id="clockInImg">
+                                <h3 id="statusClockIn">Clock In</h3>
+                            </button>
+                        </div>
+                        <div class="white-ring" >
+                            <button class="btn-text" onclick="BreakStart()" id="break-In"> 
+                                <img src="./assets/lunch.png" alt="clockIn" class="clockIn" id="BreakInImg">
+                                <h3 id="status-break">Stop Break</h3>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
